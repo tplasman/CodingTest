@@ -1,0 +1,162 @@
+﻿body {
+    font-family: Arial, Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: gainsboro;
+}
+
+/*global*/
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.dark{
+    padding: 15px;
+    background: #0c8c80;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button_1{
+    height: 38px;
+    background: #b82213;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+/*header*/
+header{
+    background: #0c8c80;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #000000 3px solid;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: #761962;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #000000;
+    font-weight: bold;
+}
+
+/*showcase*/
+#showcase{
+    min-height: 400px;
+    background: url("../img/selfie.jpg");
+    width: auto;
+    text-align: center;
+    color: #000000;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+/*newsletter*/
+#newsletter{
+    padding: 15px;
+    color: #ffffff;
+    background:#0c8c80;
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/*boxes*/
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img{
+    width: 90px;
+}
+
+/*sidebar*/
+aside#sidebar {
+    width: 30%;
+    background-color: #0c8c80;
+    overflow: hidden;
+    padding-top: 20px;
+    float: right;
+}
+
+/*main-col*/
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+
+
+
+/*footer*/
+footer {
+    font-size: 12px;
+    padding-top: 10px;
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #0c8c80;
+    text-align: center;
+    height: 60px;
+}
