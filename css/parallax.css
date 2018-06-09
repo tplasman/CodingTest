@@ -75,6 +75,34 @@
     background-color:transparent;
 }
 
+
+/*footer*/
+footer {
+    background-color: #ddd;
+    padding-top: 10px;
+    min-height: 40px;
+    border-bottom: 5px solid;
+    text-align: center;
+}
+
+footer nav{
+    margin-top: 10px;
+}
+
+footer a{
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+footer li{
+    display: inline;
+    padding: 0 40px 0 15px;
+}
+
+
+
 @media(max-width:568px){
     .pimg1, .pimg2, .pimg3{
         background-attachment:scroll;
