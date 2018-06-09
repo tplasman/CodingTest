@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Tyler Plasman" />
+    <title>Moogle, aka My Google</title>
+    <link rel="stylesheet" href="css/moogle.css" />
+</head>
+<body>
+    <header>
+        <nav id="top">
+            <ul class="right">
+                <li><a href="https://www.google.com/intl/en/about/">About</a></li>
+                <li><a href="https://store.google.com">Store</a></li>
+            </ul>
+            <ul class="left">
+                <li><a href="gmail.com">Gmail</a></li>
+                <li><a href="https://www.google.com/imghp">Images</a></li>
+                <li><a href="https://www.google.com/intl/en/about/products/">Apps</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="google">
+        <div class="container">
+            <p>Moogle</p>
+            <form>
+                <input type="text" placeholder="Search" />
+                <button class="button_1" type="submit">Moogle Search</button>
+                <script type="text/javascript">
+                    document.getElementById('frmSearch').onsubmit = function () {
+                        windows.location = 'http://www.google.com/search' + document.getElementById('txtSearch').value;
+                        return false;
+                    }
+                </script>
+                <button class="button_2" type="submit"> I'm Feeling Lucky</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <nav id="bottom">
+            <ul class="right">
+                <li><a href="https://www.google.com/intl/en_us/ads/">Advertising</a></li>
+                <li><a href="https://www.google.com/services/">Business</a></li>
+            </ul>
+            <ul class="left">
+                <li><a href="https://policies.google.com/privacy">Privacy</a></li>
+                <li><a href="https://policies.google.com/terms">Terms</a></li>
+                <li><a href="https://www.google.com/preferences">Settings</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
