@@ -1,0 +1,93 @@
+body{
+    font-family: Arial, Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 15px;
+    line-height: 1.5px;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    color:#000;
+}
+
+/*global*/
+a{
+    text-decoration: none;
+    color: #000;
+    margin:0 20px 0 20px;
+}
+a:hover{
+    text-decoration:underline;
+}
+
+/*header*/
+header{
+    background-color: #fff;
+    color: #000;
+    padding-top: 20px;
+    min-height: 40px;
+    border-bottom: #fff 3px solid;
+}
+
+.header-left{
+    float:left;
+    padding-top: 10px;
+    display: inline;
+}
+
+.header-right{
+    float: right;
+    padding-top:10px;
+    display:inline;
+}
+
+/*Google and Search*/
+.container{
+    text-align:center;
+    width:100%;
+    height:auto;
+    padding-top:100px;
+    margin-top:10px;
+}
+
+img{
+    margin-top:150px;
+    border:1px solid #fff;
+    width:800px;
+}
+
+#google input[type="text"]{
+    padding:5px;
+    height:20px;
+    width:400px;
+}
+
+.button_1{
+    height:35px;
+    background:transparent;
+    background-color:#e2e2e2;
+    border:0;
+    padding-right:10px;
+    padding-left:10px;
+}
+
+.button_2 {
+    height: 35px;
+    background-color: #e2e2e2;
+    border: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+button:hover{
+    color:black;
+    border:1px solid #000;
+}
+
+/*footer*/
+footer{
+    padding-top:20px;
+    padding-bottom:10px;
+    background-color:#e2e2e2;
+    position:absolute;
+    height:20px;
+    width:100%;
+}

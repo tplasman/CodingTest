@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -10,45 +10,39 @@
 </head>
 <body>
     <header>
-        <nav id="top">
-            <ul class="right">
-                <li><a href="https://www.google.com/intl/en/about/">About</a></li>
-                <li><a href="https://store.google.com">Store</a></li>
-            </ul>
-            <ul class="left">
-                <li><a href="gmail.com">Gmail</a></li>
-                <li><a href="https://www.google.com/imghp">Images</a></li>
-                <li><a href="https://www.google.com/intl/en/about/products/">Apps</a></li>
-            </ul>
+        <nav>
+            <span class="header-left">
+                <a href="https://www.google.com/intl/en/about/">About</a>
+                <a href="https://store.google.com">Store</a>
+            </span>
+            <span class="header-right">
+                <a href="gmail.com">Gmail</a>
+                <a href="https://www.google.com/imghp">Images</a>
+                <a href="https://www.google.com/intl/en/about/products/">Apps</a>
+            </span>
         </nav>
     </header>
     <section id="google">
         <div class="container">
-            <p>Moogle</p>
-            <form>
-                <input type="text" placeholder="Search" />
-                <button class="button_1" type="submit">Moogle Search</button>
-                <script type="text/javascript">
-                    document.getElementById('frmSearch').onsubmit = function () {
-                        windows.location = 'http://www.google.com/search' + document.getElementById('txtSearch').value;
-                        return false;
-                    }
-                </script>
-                <button class="button_2" type="submit"> I'm Feeling Lucky</button>
+            <img src="./img/google.png">
+            <form method="get" action="https://www.google.com/search">
+                <input type="text" name="q" value=""/>
+                <p><button class="button_1" type="submit">Moogle Search</button>
+                <button class="button_2" type="submit"> I'm Feeling Lucky</button></p>
             </form>
         </div>
     </section>
     <footer>
         <nav id="bottom">
-            <ul class="right">
-                <li><a href="https://www.google.com/intl/en_us/ads/">Advertising</a></li>
-                <li><a href="https://www.google.com/services/">Business</a></li>
-            </ul>
-            <ul class="left">
-                <li><a href="https://policies.google.com/privacy">Privacy</a></li>
-                <li><a href="https://policies.google.com/terms">Terms</a></li>
-                <li><a href="https://www.google.com/preferences">Settings</a></li>
-            </ul>
+            <span class="footer-right">
+                <a href="https://www.google.com/intl/en_us/ads/">Advertising</a>
+                <a href="https://www.google.com/services/">Business</a>
+            </span>
+            <span class="footer-left">
+                <a href="https://policies.google.com/privacy">Privacy</a>
+                <a href="https://policies.google.com/terms">Terms</a>
+                <a href="https://www.google.com/preferences">Settings</a>
+            </span>
         </nav>
     </footer>
 </body>
