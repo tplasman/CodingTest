@@ -1,6 +1,7 @@
 body{
     font-family: Arial, Arial, Helvetica, sans-serif, sans-serif;
-    font-size: 15px;
+    font-size: 12px;
+    font-weight:bold;
     line-height: 1.5px;
     padding: 0;
     margin: 0;
@@ -45,12 +46,12 @@ header{
     width:100%;
     height:auto;
     padding-top:10px;
-    padding-bottom:100px;
+    padding-bottom:200px;
     margin-top:100px;
 }
 
 img{
-    margin-top:150px;
+    margin-top:10px;
     border:1px solid #fff;
     width:600px;
 }
@@ -86,10 +87,12 @@ button:hover{
 /*footer*/
 .footer{
     background:#e2e2e2;
-    padding:25px;
+    padding:10px;
+    height:20px;
     bottom:0;
     position:fixed;
     width: 100%;
+    left:-20px;
 }
 
 .footer-left {
@@ -101,5 +104,5 @@ button:hover{
 .footer-right {
     float: right;
     padding-top: 10px;
-    display: inline
+    display: inline;
 }
