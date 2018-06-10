@@ -20,22 +20,25 @@ a:hover{
 }
 
 /*header*/
-header{
+header {
     background-color: #fff;
     color: #000;
-    padding-top: 20px;
-    min-height: 40px;
+    height: 20px;
+    top:0;
+    width:100%;
     border-bottom: #fff 3px solid;
 }
 
 .header-left{
     float:left;
+    width:40%;
     padding-top: 10px;
     display: inline;
 }
 
 .header-right{
     float: right;
+    width:30%;
     padding-top:10px;
     display:inline;
 }
@@ -50,10 +53,12 @@ header{
     margin-top:100px;
 }
 
-img{
-    margin-top:10px;
-    border:1px solid #fff;
-    width:600px;
+img {
+    border: 1px solid #fff;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 #google input[type="text"]{
@@ -92,17 +97,68 @@ button:hover{
     bottom:0;
     position:fixed;
     width: 100%;
-    left:-20px;
 }
 
 .footer-left {
     float: left;
+    width:30%;
     padding-top: 10px;
     display: inline
 }
 
 .footer-right {
     float: right;
+    width:30%;
     padding-top: 10px;
     display: inline;
+}
+
+/*For Mobile*/
+@media(max-width:568px) {
+    .header{
+        text-align:center;
+    }
+
+    .header-left {
+        width: 100%;
+        padding-top: 10px;
+        display: inline;
+    }
+
+    .header-right {
+        width: 100%;
+        padding-top: 10px;
+        display: inline;
+    }
+
+    img {
+        margin-top: 10px;
+        border: 1px solid #fff;
+        max-width: 50%;
+        height: auto;
+        display:block;
+        margin: 0 auto;
+    }
+
+    #google input[type="text"] {
+        padding: 5px;
+        height: auto;
+        width: 50%;
+    }
+
+    .footer{
+        text-align:center;
+    }
+
+    .footer-left {
+        width: 100%;
+        padding-top: 10px;
+        display: inline
+    }
+
+    .footer-right {
+        width: 100%;
+        padding-top: 10px;
+        display: inline;
+    }
 }
