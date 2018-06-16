@@ -7,9 +7,21 @@
     <title>Bootstrap Cheat Sheet</title>
 
     <!--Bootstrap-->
-    <link href="css/boostrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
 </head>
 <body>
+
+    <!-- NAVBAR WIP -->
+    
+
+    <!-- JUMBOTRON -->
+    <div class="jumbotron">
+        <h1>Welcome To My Website!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non sollicitudin arcu. Sed dignissim luctus dui, in dapibus magna mollis vel. Vestibulum velit ligula, convallis sed condimentum ut, porta eu tellus.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    </div>
+
     <!-- TYPOGRAPHY -->
     <div class="container">
         <h1 class="page=header"> Hello, world! <small>Secondary text</small></h1>
@@ -68,7 +80,7 @@
 
         <!-- CONTEXTUAL COLORS -->
         <p class="text-primary">Hello World!</p>
-        <p class="text-sucess">Hello World!</p>
+        <p class="text-success">Hello World!</p>
         <p class="text-info">Hello World!</p>
         <p class="text-warning">Hello World!</p>
         <p class="text-danger">Hello World!</p>
@@ -76,7 +88,7 @@
 
         <!-- CONTEXTUAL BACKGROUND COLORS -->
         <p class="bg-primary">Hello World!</p>
-        <p class="bg-sucess">Hello World!</p>
+        <p class="bg-success">Hello World!</p>
         <p class="bg-info">Hello World!</p>
         <p class="bg-warning">Hello World!</p>
         <p class="bg-danger">Hello World!</p>
@@ -97,7 +109,7 @@
         <!-- Contextual Buttons -->
         <button class=" btn btn-default">Default</button>
         <button class=" btn btn-primary">Primary</button>
-        <button class=" btn btn-sucess">Sucess</button>
+        <button class=" btn btn-success">Success</button>
         <button class=" btn btn-info">Info</button>
         <button class=" btn btn-warning">Warning</button>
         <button class=" btn btn-danger">Danger</button>
@@ -176,7 +188,7 @@
             </div>
             <div class="checkbox">
                 <label>
-                <input type="checkbox"> Remember me
+                    <input type="checkbox"> Remember me
                 </label>
                 <button type="submit" class="btn btn-default">Login</button>
             </div>
@@ -194,12 +206,12 @@
                 <th>Lastname</th>
                 <th>Age</th>
             </tr>
-            <tr class="danger"> 
+            <tr class="danger">
                 <th>Jill</th>
                 <th>Smaith</th>
                 <th>50</th>
             </tr>
-            <tr class="sucess">
+            <tr class="success">
                 <th>Eve</th>
                 <th>Jackson</th>
                 <th>24</th>
@@ -237,8 +249,8 @@
             <ul class="list-group">
                 <a href="#" class="list-group-time active">Item One</a>
                 <a href="#" class="list-group-time">Item Two</a>
-                <a href="#" class="list-group-time list-grou-item-sucess">Item Three</a>
-                <a href="#"class="list-group-time disabled">Item Four</a>
+                <a href="#" class="list-group-time list-grou-item-success">Item Three</a>
+                <a href="#" class="list-group-time disabled">Item Four</a>
             </ul>
         </div>
 
@@ -266,18 +278,96 @@
         <hr />
 
         <!--ALERTS-->
-        <div class="alert" role="alert"></div>
-        <div class="alert" role="alert"></div>
-        <div class="alert" role="alert"></div>
-        <div class="alert" role="alert"></div>
+        <div class="alert alert-success" role="alert">A success alert</div>
+        <div class="alert alert-info" role="alert">An info alert</div>
+        <div class="alert alert-warning" role="alert">A warning alert</div>
+        <div class="alert alert-danger" role="alert">A danger alert</div>
+
+        <div class="alert alert-warning alert-dismissible" role="alert">
+            <button type="button" class="close" data-dimiss="alert"><span>&times;</span></button>
+            You can close this alert
+        </div>
+
+        <hr />
+
+        <!-- PRGRESS BARS-->
+        <div class="progress">
+            <div class="progress-bar progrees-bar-success progress-bar-striped active" style="width:50%;">
+                50%
+            </div>
+        </div>
+
+        <hr />
+
+        <!-- LABELS -->
+        <span class="label label-default">Default</span>
+        <h1>Hello <span class="label label-primary">Primary</span></h1>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label labl-danger">Danger</span>
+
+        <hr />
+
+        <!-- BADGES -->
+        <a href="#">Inbox <span class="badge">50</span></a>
+        <button class="btn btn-primary" type="button">
+            Messages <span class="badge">2</span>
+        </button>
+    </div>
+
+    <hr />
+
+    <!-- IMAGES -->
+    <div class="container">
+        <img src="./img/html5.jpg" alt="rounded" class="rounded">
+        <img src="./img/html5.jpg" alt="circle" class="rounded-circle">
+        <img src="./img/html5.jpg" alt="thumbnail" class="img-thumbnail">
+    </div>
+
+    <hr />
+
+    <!-- GRIDS -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-8 col-xs-8">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non sollicitudin arcu. Sed dignissim luctus dui, in dapibus magna mollis vel. </p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non sollicitudin arcu. Sed dignissim luctus dui, in dapibus magna mollis vel. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non sollicitudin arcu. Sed dignissim luctus dui, in dapibus magna mollis vel. </p>
+            </div>
+            <div class="col-md-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non sollicitudin arcu. Sed dignissim luctus dui, in dapibus magna mollis vel. </p>
+            </div>
+            <div class="col-md-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non sollicitudin arcu. Sed dignissim luctus dui, in dapibus magna mollis vel. </p>
+            </div>
+            <div class="col-md-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non sollicitudin arcu. Sed dignissim luctus dui, in dapibus magna mollis vel. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non sollicitudin arcu. Sed dignissim luctus dui, in dapibus magna mollis vel. </p>
+            </div>
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non sollicitudin arcu. Sed dignissim luctus dui, in dapibus magna mollis vel. </p>
+            </div>
+        </div>
+
     </div>
 
     <div style="height:400px"></div>
 
-    <!-- jQuery (necessary for Bootstrap's Javascript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrapmin.js"></script>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
 </html>
