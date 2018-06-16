@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equivalent="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" contect="width=device-width, initial-scale=1" />
+    <title>Bootstrap Cheat Sheet</title>
+
+    <!--Bootstrap-->
+    <link href="css/boostrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- TYPOGRAPHY -->
+    <div class="container">
+        <h1 class="page=header"> Hello, world! <small>Secondary text</small></h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec sapien eleifend, varius lectus sed, blandit erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed in finibus nisl, cursus sagittis sem.</p>
+        <p><mark>Nullam vulputate placerat urna, nec placerat dolor.</mark> Duis tristique libero ac dapibus aliquam. Interdum et <del>malesuada fames ac ante</del> ipsum primis in faucibus. Proin sit amet mauris <u>ultrices nisi</u> fringilla malesuada ac dapibus ipsum.</p>
+
+        <hr />
+
+        <!-- ALIGNMENT & TRANSFORMATION -->
+        <p class="text-left text-lowercase">Left aligned text.</p>
+        <p class="text-center text-uppercase">Center aligned text.</p>
+        <p class="text-right text-capitalize">Right aligned text.</p>
+        <p class=" text-justify">Justified text.</p>
+        <p class="text-nonwrap">No wrap text.</p>
+
+        <!-- QUICK FLOATS -->
+        <div class="pull-right">Div floated to right.</div>
+        <div class="pull-left">Div floated to the left.</div>
+
+        <!-- CLEAR FLOAT -->
+        <div class="clearfix"></div>
+
+        <hr />
+
+        <!-- BLOCKQUOTE -->
+        <blockquote class="blockquote">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec sapien eleifend, varius lectus sed, blandit erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed in finibus nisl, cursus sagittis sem.</p>
+            <footer>Quote by <cite title="John Doe">John Doe</cite></footer>
+        </blockquote>
+
+        <hr />
+
+        <!-- LISTS -->
+        <ul class="list-unstyled">
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+            <li>Item Four</li>
+        </ul>
+
+        <ul class="list-inlined">
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+            <li>Item Four</li>
+        </ul>
+
+        <!-- CODE -->
+        <code>&lt;h1&gt;Heading Text&lt;/h1&gt</code>
+        <br />
+        Change directory with <kbd>cd</kbd>
+        <br />
+        To edit settings, press <kbd><kbd>ctrl</kbd>+</kbd>,<kbd></kbd>
+
+        <hr />
+
+        <!-- CONTEXTUAL COLORS -->
+        <p class="text-primary">Hello World!</p>
+        <p class="text-sucess">Hello World!</p>
+        <p class="text-info">Hello World!</p>
+        <p class="text-warning">Hello World!</p>
+        <p class="text-danger">Hello World!</p>
+        <p class="text-muted">Hello World!</p>
+
+        <!-- CONTEXTUAL BACKGROUND COLORS -->
+        <p class="bg-primary">Hello World!</p>
+        <p class="bg-sucess">Hello World!</p>
+        <p class="bg-info">Hello World!</p>
+        <p class="bg-warning">Hello World!</p>
+        <p class="bg-danger">Hello World!</p>
+        <p class="bg-muted">Hello World!</p>
+
+    </div>
+
+    <hr />
+
+    <div class="container">
+        <!-- BUTTONS -->
+        <button class=" btn btn-default">Default</button>
+        <a href="#" class="btn btn-default" role="button">Link</a>
+        <input type="submit" class="btn btn-default" value="Submit" />
+
+        <br />
+
+        <!-- Contextual Buttons -->
+        <button class=" btn btn-default">Default</button>
+        <button class=" btn btn-primary">Primary</button>
+        <button class=" btn btn-sucess">Sucess</button>
+        <button class=" btn btn-info">Info</button>
+        <button class=" btn btn-warning">Warning</button>
+        <button class=" btn btn-danger">Danger</button>
+        <button class=" btn btn-link">Link</button>
+
+        <br />
+
+        <!-- BUTTON SIZES -->
+        <button class=" btn btn-default btn-lg">Default</button>
+        <button class=" btn btn-default">Default</button>
+        <button class=" btn btn-default btn-sm">Default</button>
+        <button class=" btn btn-default btn-xs">Default</button>
+
+        <!-- DISABLE BUTTON -->
+        <button class=" btn btn-default" disabled="disabled">Default</button>
+    </div>
+
+    <!-- FORMS -->
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" placeholder="Add Name" />
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" placeholder="Add Email" />
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea type="text" class="form-control" placeholder="Add Message"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <select class="form-control">
+                    <option calue="male">Male</option>
+                    <option value="femlae">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Upload File</label>
+                <input type="file" />
+                <p class="help-block">Only png and jpg allowed</p>
+            </div>
+
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" /> Check me out
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+
+        <hr />
+
+        <!-- INLINE FORM-->
+        <form class="form-inline">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" placeholder="Add Name" />
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" placeholder="Add Email" />
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" placeholder="Password" />
+            </div>
+            <div class="checkbox">
+                <label>
+                <input type="checkbox"> Remember me
+                </label>
+                <button type="submit" class="btn btn-default">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <hr />
+
+
+    <!-- TABLES -->
+    <div class="container">
+        <table class="table table-striped table-bordered table-color table-condensed">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr class="danger"> 
+                <th>Jill</th>
+                <th>Smaith</th>
+                <th>50</th>
+            </tr>
+            <tr class="sucess">
+                <th>Eve</th>
+                <th>Jackson</th>
+                <th>24</th>
+            </tr>
+            <tr>
+                <th>John</th>
+                <th>Doe</th>
+                <th>34</th>
+            </tr>
+            <tr>
+                <th>Staphanie</th>
+                <th>Landon</th>
+                <th>47</th>
+            </tr>
+            <tr>
+                <th>Dwayne</th>
+                <th>Johnson</th>
+                <th>19</th>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+
+    <!-- LIST GROUP -->
+    <div class="container">
+        <ul class="list-group">
+            <li class="list-group-time">Item One</li>
+            <li class="list-group-time">Item Two</li>
+            <li class="list-group-time">Item Three</li>
+            <li class="list-group-time">Item Four</li>
+        </ul>
+
+        <div class="list-group">
+            <ul class="list-group">
+                <a href="#" class="list-group-time active">Item One</a>
+                <a href="#" class="list-group-time">Item Two</a>
+                <a href="#" class="list-group-time list-grou-item-sucess">Item Three</a>
+                <a href="#"class="list-group-time disabled">Item Four</a>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <!-- PANELS -->
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel Title</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+            <div class="panel-footer">Panel Footer</div>
+        </div>
+
+        <hr />
+
+        <!-- WELLS -->
+        <div class="well">Hello World</div>
+        <div class="well well-lg">Hello World</div>
+        <div class="well well-sm">Hello World</div>
+
+        <hr />
+
+        <!--ALERTS-->
+        <div class="alert" role="alert"></div>
+        <div class="alert" role="alert"></div>
+        <div class="alert" role="alert"></div>
+        <div class="alert" role="alert"></div>
+    </div>
+
+    <div style="height:400px"></div>
+
+    <!-- jQuery (necessary for Bootstrap's Javascript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrapmin.js"></script>
+
+</body>
+</html>
