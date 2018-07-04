@@ -1,14 +1,27 @@
-var rolls;
+//dice rolling app javascript
 
-function diceRoll() {
-    var dice = document.getElementByID("sides");
-    var sides = document.getElementByID("dice");
+function rollDice(sides) {
+    var sum = 0;
 
-    Math.floor(Math.random() * sides) +1;
- 
+    //get sides of dice from user
+    var sides = document.getElementById("sides").value;
+    //get amount of dice from user
+    var amount = document.getElementById("amount").value;
 
-return rolls
+    for(var i = 0; i < amount; i++){
+        //random number generator
+        var rolls = 1 + Math.floor(Math.random() * sides);
+        sum += rolls;
+    }
+
+    //update the UI
+    document.getElementById("total").innerHTML = sum;
 
 }
 
-console.log(rolls);
+//reset button
+function init() {
+    document.getElementById("sides").value = "";
+    document.getElementById("amount").value = "";
+    document.getElementById("total").innerHTML = 0;
+}

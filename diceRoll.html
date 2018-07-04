@@ -1,25 +1,38 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DnD Dice Roller</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DnD Dice Roller</title>
 
-  <link rel="stylesheet" href="./CSS/style.css">
-  <script src="./javascript/app.js"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
+  
 </head>
 <body>
-<header>
-  <h1>Basic Html Page</h1>
-</header>
+    <header>
+        <div id="branding">
+            <h1><span class="highlight">DnD Dice Rolls!</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
 <main>
-  <div class="container">
-    <form>
-      <input type="number" id="sides" placeholder="How Many Sides?">
-      <input type="number" id="dice" placeholder="How Many Dice?">
-      <button class="button_1" type="submit">Submit</button>
-    </form>
-  </div>
+    <div class="container">
+        <div class="roller">
+            <input type="number" id="sides" value="" placeholder="How Many Sides?">
+            <input type="number" id="amount" placeholder="How Many Dice?">
+            <button class="button" onclick="rollDice()">Roll Dice</button>
+            <button class="button" onclick="init()">Reset</button>
+            <div class="diceTotal" id="total">0</div>
+        </div>
+    </div>
+
+    <script src="./javascript/app.js"></script>
 </main>
 <footer>
 <p><h5>Copyright &copy; Plasman 2018</h5></p>
